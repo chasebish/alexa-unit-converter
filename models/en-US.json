@@ -1,28 +1,170 @@
 {
-	"invocation": "my test app",
+	"invocation": "unit converter",
 	"intents": [
 		{
-			"name": "HelloWorldIntent",
+			"name": "LengthIntent",
 			"phrases": [
-				"hello",
-				"say hello",
-				"say hello world"
+				"length",
+				"length please",
+				"convert length",
+				"convert length please",
+				"length conversion",
+				"please convert length"
+			]
+		},
+
+
+
+
+		{
+			"name": "FootToInch",
+			"phrases": [
+				"{num} feet to inches",
+				"{num} foot to inches",
+				"{num} feet to inches please",
+				"convert {num} feet to inches"
+			],
+			"inputs":[
+				{
+					"name": "num",
+					"type":{
+						"alexa":"AMAZON.NUMBER"
+					}
+				}
 			]
 		},
 		{
-			"name": "MyNameIsIntent",
+			"name": "FootToYard",
 			"phrases": [
-				"{name}",
-				"my name is {name}",
-				"i am {name}",
-				"you can call me {name}"
+				"{num} feet to yards",
+				"{num} foot to yards",
+				"{num} feet to yards please",
+				"convert {num} feet to yards"
 			],
-			"inputs": [
+			"inputs":[
 				{
-					"name": "name",
-					"type": {
-						"alexa": "AMAZON.US_FIRST_NAME",
-						"dialogflow": "@sys.given-name"
+					"name": "num",
+					"type":{
+						"alexa":"AMAZON.NUMBER"
+					}
+				}
+			]
+		},
+		{
+			"name": "FootToMile",
+			"phrases": [
+				"{num} feet to miles",
+				"{num} foot to miles",
+				"{num} feet to miles please",
+				"convert {num} feet to miles"
+			],
+			"inputs":[
+				{
+					"name": "num",
+					"type":{
+						"alexa":"AMAZON.NUMBER"
+					}
+				}
+			]
+		},
+		{
+			"name": "FootToNanometer",
+			"phrases": [
+				"{num} feet to nanometers",
+				"{num} foot to nanometers",
+				"{num} feet to nanometers please",
+				"convert {num} feet to nanometers"
+			],
+			"inputs":[
+				{
+					"name": "num",
+					"type":{
+						"alexa":"AMAZON.NUMBER"
+					}
+				}
+			]
+		},
+		{
+			"name": "FootToMicrometer",
+			"phrases": [
+				"{num} feet to micrometers",
+				"{num} foot to micrometers",
+				"{num} feet to micrometers please",
+				"convert {num} feet to micrometers"
+			],
+			"inputs":[
+				{
+					"name": "num",
+					"type":{
+						"alexa":"AMAZON.NUMBER"
+					}
+				}
+			]
+		},
+		{
+			"name": "FootToMillimeter",
+			"phrases": [
+				"{num} feet to millimeters",
+				"{num} foot to millimeters",
+				"{num} feet to millimeters please",
+				"convert {num} feet to millimeters"
+			],
+			"inputs":[
+				{
+					"name": "num",
+					"type":{
+						"alexa":"AMAZON.NUMBER"
+					}
+				}
+			]
+		},
+		{
+			"name": "FootToCentimeter",
+			"phrases": [
+				"{num} feet to centimeters",
+				"{num} foot to centimeters",
+				"{num} feet to centimeters please",
+				"convert {num} feet to centimeters"
+			],
+			"inputs":[
+				{
+					"name": "num",
+					"type":{
+						"alexa":"AMAZON.NUMBER"
+					}
+				}
+			]
+		},
+		{
+			"name": "FootToMeter",
+			"phrases": [
+				"{num} feet to meters",
+				"{num} foot to meters",
+				"{num} feet to meters please",
+				"convert {num} feet to meters"
+			],
+			"inputs":[
+				{
+					"name": "num",
+					"type":{
+						"alexa":"AMAZON.NUMBER"
+					}
+				}
+			]
+		},
+		{
+			"name": "FootToKilometer",
+			"phrases": [
+				"{num} feet to kilometers",
+				"{num} foot to kilometers",
+				"{num} feet to kilometers please",
+				"convert {num} feet to kilometers"
+			],
+			"inputs":[
+				{
+					"name": "num",
+					"type":{
+						"alexa":"AMAZON.NUMBER"
 					}
 				}
 			]
@@ -34,7 +176,14 @@
 				"intents": [
 					{
 						"name": "AMAZON.CancelIntent",
-						"samples": []
+						"samples": [
+							"to cancel",
+							"cancel my order",
+							"to cancel my order",
+							"to cancel my order please",
+							"please cancel my order",
+							"to please cancel my order"
+						]
 					},
 					{
 						"name": "AMAZON.HelpIntent",

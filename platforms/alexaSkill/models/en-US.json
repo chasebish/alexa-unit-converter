@@ -1,35 +1,165 @@
 {
 	"interactionModel": {
 		"languageModel": {
-			"invocationName": "my test app",
+			"invocationName": "unit converter",
 			"types": [],
 			"intents": [
 				{
-					"name": "HelloWorldIntent",
+					"name": "LengthIntent",
 					"samples": [
-						"hello",
-						"say hello",
-						"say hello world"
+						"length",
+						"length please",
+						"convert length",
+						"convert length please",
+						"length conversion",
+						"please convert length"
 					]
 				},
 				{
-					"name": "MyNameIsIntent",
+					"name": "FootToInch",
 					"samples": [
-						"{name}",
-						"my name is {name}",
-						"i am {name}",
-						"you can call me {name}"
+						"{num} feet to inches",
+						"{num} foot to inches",
+						"{num} feet to inches please",
+						"convert {num} feet to inches"
 					],
 					"slots": [
 						{
-							"name": "name",
-							"type": "AMAZON.US_FIRST_NAME"
+							"name": "num",
+							"type": "AMAZON.NUMBER"
+						}
+					]
+				},
+				{
+					"name": "FootToYard",
+					"samples": [
+						"{num} feet to yards",
+						"{num} foot to yards",
+						"{num} feet to yards please",
+						"convert {num} feet to yards"
+					],
+					"slots": [
+						{
+							"name": "num",
+							"type": "AMAZON.NUMBER"
+						}
+					]
+				},
+				{
+					"name": "FootToMile",
+					"samples": [
+						"{num} feet to miles",
+						"{num} foot to miles",
+						"{num} feet to miles please",
+						"convert {num} feet to miles"
+					],
+					"slots": [
+						{
+							"name": "num",
+							"type": "AMAZON.NUMBER"
+						}
+					]
+				},
+				{
+					"name": "FootToNanometer",
+					"samples": [
+						"{num} feet to nanometers",
+						"{num} foot to nanometers",
+						"{num} feet to nanometers please",
+						"convert {num} feet to nanometers"
+					],
+					"slots": [
+						{
+							"name": "num",
+							"type": "AMAZON.NUMBER"
+						}
+					]
+				},
+				{
+					"name": "FootToMicrometer",
+					"samples": [
+						"{num} feet to micrometers",
+						"{num} foot to micrometers",
+						"{num} feet to micrometers please",
+						"convert {num} feet to micrometers"
+					],
+					"slots": [
+						{
+							"name": "num",
+							"type": "AMAZON.NUMBER"
+						}
+					]
+				},
+				{
+					"name": "FootToMillimeter",
+					"samples": [
+						"{num} feet to millimeters",
+						"{num} foot to millimeters",
+						"{num} feet to millimeters please",
+						"convert {num} feet to millimeters"
+					],
+					"slots": [
+						{
+							"name": "num",
+							"type": "AMAZON.NUMBER"
+						}
+					]
+				},
+				{
+					"name": "FootToCentimeter",
+					"samples": [
+						"{num} feet to centimeters",
+						"{num} foot to centimeters",
+						"{num} feet to centimeters please",
+						"convert {num} feet to centimeters"
+					],
+					"slots": [
+						{
+							"name": "num",
+							"type": "AMAZON.NUMBER"
+						}
+					]
+				},
+				{
+					"name": "FootToMeter",
+					"samples": [
+						"{num} feet to meters",
+						"{num} foot to meters",
+						"{num} feet to meters please",
+						"convert {num} feet to meters"
+					],
+					"slots": [
+						{
+							"name": "num",
+							"type": "AMAZON.NUMBER"
+						}
+					]
+				},
+				{
+					"name": "FootToKilometer",
+					"samples": [
+						"{num} feet to kilometers",
+						"{num} foot to kilometers",
+						"{num} feet to kilometers please",
+						"convert {num} feet to kilometers"
+					],
+					"slots": [
+						{
+							"name": "num",
+							"type": "AMAZON.NUMBER"
 						}
 					]
 				},
 				{
 					"name": "AMAZON.CancelIntent",
-					"samples": []
+					"samples": [
+						"to cancel",
+						"cancel my order",
+						"to cancel my order",
+						"to cancel my order please",
+						"please cancel my order",
+						"to please cancel my order"
+					]
 				},
 				{
 					"name": "AMAZON.HelpIntent",
